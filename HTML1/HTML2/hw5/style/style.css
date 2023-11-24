@@ -3,6 +3,7 @@
 }
 body{
     background-color: pink;
+    font-family: 'Inter', sans-serif;
 }
 .container{
     width: 360px;
@@ -12,13 +13,14 @@ body{
     padding: 56px 20px 91px 28px;
     margin: auto;
 }
-button{
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+  button{
     background-color: #FFF;
     border: none;
 }
 h1{
     color: #000;
-    font-family: Inter;
     font-size: 32px;
     font-style: normal;
 }
@@ -58,7 +60,6 @@ input{
 }
 h2{
     color: #003049;
-    font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -71,19 +72,17 @@ h2{
     border-radius: 10px;
     background: #FFF;
     box-shadow: 0px 0px 4px 0px #E5E5E5;
-    margin: 12px;
+    margin: 12px 0;
     padding: 6px 13.5px;
  }
 .burger-price{
     color: #D62828;
-font-family: Inter;
 font-size: 14px;
 font-style: normal;
 margin-top: 4px;
 }
 .burger-title{
     color: #003049;
-font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;

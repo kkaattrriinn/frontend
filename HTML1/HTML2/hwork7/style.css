@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+.body{
+}
+.main-container{
+    width: 1920px;
+    height: 960px;
+    /* position: absolute; */
+    /* top: 135px; */
+    margin: auto;
+    background: rgba(0, 161, 198, 0.05);
+    position: relative;
+}
+.main-wrapper{
+    position: absolute;
+    right: 350px;
+    top: 142px;
+}
+p{
+    display: block;
+    width: 695px;
+    color: #2B292D;
+    font-family: IBM Plex Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+.dev-container{
+    margin-top: 50px;
+}
+.devs{
+    display: inline-block;
+    width: 295px;
+    height: 470px;
+    background-color: white;
+    margin-right: 20px;
+    filter: drop-shadow(0px 0px 10px rgba(45, 54, 64, 0.05));
+    border-radius: 20px;
+}
+.img{
+    margin-left: 90px;
+    margin-top: 59px;
+}
+.dev-text{
+    font-family: 'Catamaran', sans-serif;
+}
+.dev-icon{
+    width: 50px;
+    height: 50px;
+   
+}
+h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h2{
+    color: #2D3640;
+    text-align: center;
+    font-family: Catamaran;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.625px;
+    margin-top: 34px;
+    margin-bottom: 0;
+    
+}
+h3{
+    color: #4B4F52;
+    text-align: center;
+    font-family: Catamaran;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+.dev-icon1{
+    margin-left: 123px;
+    margin-top: 33px;
+    
+}
+.dev-icon2{
+    margin-left: 57px;
+    margin-right: 15px;
+}
+.dev-icon3{
+    margin-right: 15px;
+    margin-top: 33px;
+}
+.dev-icon4{
+    margin-left: 91px;
+    margin-top: 33px;
+    margin-right: 15px;
+}

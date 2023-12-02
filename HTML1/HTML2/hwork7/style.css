@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 .body{
+    
 }
 .main-container{
-    width: 1920px;
+    width: 1900px;
     height: 960px;
     /* position: absolute; */
     /* top: 135px; */
@@ -31,13 +32,14 @@ p{
     margin-top: 50px;
 }
 .devs{
-    display: inline-block;
+    /* display: inline-block; */
     width: 295px;
     height: 470px;
     background-color: white;
     margin-right: 20px;
     filter: drop-shadow(0px 0px 10px rgba(45, 54, 64, 0.05));
     border-radius: 20px;
+    float: left;
 }
 .img{
     margin-left: 90px;

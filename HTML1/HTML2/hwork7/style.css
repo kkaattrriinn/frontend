@@ -2,10 +2,10 @@
     box-sizing: border-box;
 }
 .body{
-    
+    overflow-x:hidden;
 }
 .main-container{
-    width: 1900px;
+    width: 1700px;
     height: 960px;
     /* position: absolute; */
     /* top: 135px; */

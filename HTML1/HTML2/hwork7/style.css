@@ -32,6 +32,10 @@ p{
 }
 .dev-container{
     margin-top: 50px;
+    overflow: hidden;
+}
+.dev-container:last-child{
+    margin-right: 0;
 }
 .devs{
     /* display: inline-block; */

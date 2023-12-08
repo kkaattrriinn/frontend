@@ -132,7 +132,15 @@ body{
     border: 3px solid #FFF;
     background:none;
 }
-h4{
+.button1 h4{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 141.523%; /* 31.135px */
+}
+.button2 h4{
     color: #FFF;
     font-family: Inter;
     font-size: 22px;
@@ -176,9 +184,9 @@ h4{
 }
 .bottom-right h4{
     color: #FFF;
-
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
+    padding-top: 20px;
 }

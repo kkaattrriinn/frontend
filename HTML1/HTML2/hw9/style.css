@@ -4,6 +4,7 @@
 body{
     background-image: url('../hw9/picture/Rectangle\ 1.png');
     background-size: 100%;
+    background-attachment: fixed;
     font-family: 'Inter', sans-serif;
     position: relative;
 }

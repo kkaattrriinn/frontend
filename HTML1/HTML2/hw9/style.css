@@ -35,6 +35,9 @@ body{
     align-items: center;
 
 }
+section{
+    width: 75%;
+}
 .description{
     margin-bottom: 30px;
 }
@@ -52,6 +55,17 @@ body{
     line-height: normal;
     font-weight: 500;
     font-family: Inter;
+}
+.g1{
+    padding-right: 10px;
+    border-right: 3px solid;
+}
+.g2{
+    padding: 0 10px;
+    border-right: 3px solid ;
+}
+.g3{
+    padding-left: 10px;
 }
 .text{
     width: 580px;
@@ -103,13 +117,18 @@ body{
 }
 .stars{
     display: flex;
-    height: 70px; ;
+    height: 70px; 
+    margin-top: 15px;
 }
-.fa-solid{
+.fa-star{
     color:#FFEA2B;
     margin-right: 15px;
-    width: 50px;
-    height: 50px;
+    font-size: 30px;
+}
+.fa-regular{
+    margin-right: 15px ;
+    font-size: 30px;
+    color: #FFF;
 }
 .buttons{
     display: flex;
@@ -117,14 +136,17 @@ body{
 }
 .button1{
     border-radius: 10px;
-    background-color: #D40D1F;
+    background:none;
     width: 272px;
     height: 64px;
-    border: none;
+    border: 3px solid white;
     margin-right: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.button1:hover {
+    background-color: red;
 }
 .button2{
     width: 271px;
@@ -132,6 +154,9 @@ body{
     border-radius: 10px;
     border: 3px solid #FFF;
     background:none;
+}
+.button2:hover {
+    background-color: red;
 }
 .button1 h4{
     color: #FFF;
@@ -152,7 +177,13 @@ body{
 .films{
     margin-top: 54px;
 }
-
+.films .film-picture:last-child{
+    margin-right: 0px;
+}
+.text-buttons{
+    display: flex;
+    justify-content: space-between;
+}
 .text-buttons h1{
     color: #FFF;
     font-family: Inter;
@@ -169,9 +200,6 @@ body{
 .film-picture img{
     border: 1px solid #FFF;
     margin-right: 40px;
-}
-.film-picture:last-child{
-    margin-right: 0;
 }
 .bottom-right{
     width: 174px;
@@ -190,4 +218,15 @@ body{
     font-style: normal;
     font-weight: 500;
     padding-top: 20px;
+}
+.button1:hover {
+    background-color: red;
+}
+.b4 i{
+    color: #A7A6A6;
+    text-align: center;
+}
+.b4{
+    border-radius: %;
+    border: 2px solid #A7A6A6;
 }

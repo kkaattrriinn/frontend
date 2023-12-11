@@ -200,6 +200,8 @@ section{
 .film-picture img{
     border: 1px solid #FFF;
     margin-right: 40px;
+    width: 185px;
+    height: 235px;
 }
 .bottom-right{
     width: 174px;
@@ -225,8 +227,25 @@ section{
 .b4 i{
     color: #A7A6A6;
     text-align: center;
+    font-size: 30px;
 }
 .b4{
-    border-radius: %;
     border: 2px solid #A7A6A6;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 7px ;
+}
+.b4:hover{
+    border:2px solid white;
+}
+ .b4 i:hover{
+    color: #FFF;
+} 
+.icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
 }

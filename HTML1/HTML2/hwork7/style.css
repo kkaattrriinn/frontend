@@ -34,7 +34,7 @@ p{
     margin-top: 50px;
     overflow: hidden;
 }
-.dev-container:last-child{
+.dev-container .devs:last-child{
     margin-right: 0;
 }
 .devs{

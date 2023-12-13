@@ -240,7 +240,7 @@ section{
 .b4:hover{
     border:2px solid white;
 }
- .b4 i:hover{
+ .b4:hover i{
     color: #FFF;
 } 
 .icon{

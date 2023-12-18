@@ -86,3 +86,52 @@ body{
     font-size: 18px;
     line-height: 28px; /* 155.556% */
 }
+.shoes-women, .shoes-men img{
+    width: 342px;
+    height: 340px;
+}
+.shoes-women{
+    padding: 0 25px;
+    margin-top: 40px;
+    position: relative;
+}
+.women{
+    color: white;
+    font-family: Montserrat;
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    margin-left: 20px;
+}
+.shop-now{
+    background: none;
+    border: none;
+    font-family: Poppins;
+    font-size: 18px;
+    position: absolute;
+    bottom: 13px;
+    right: -15px;
+}
+.shoes-men{
+    padding: 0 25px;
+    margin-top: 25px;
+    position: relative;
+}
+.men{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 40px;
+    position: absolute;
+    top: 25px;
+    margin-left: 20px;
+}
+.shop-now2{
+    color: #FFF;
+    background: none;
+    border: none;
+    font-family: Poppins;
+    font-size: 18px;
+    position: absolute;
+    bottom: 14px;
+    margin-left: 15px;
+}

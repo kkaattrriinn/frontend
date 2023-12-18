@@ -3,10 +3,12 @@
 }
 body{
     min-width: 390px;
-    overflow-x: hidden;
     font-family: ‘Poppins’, sans-serif;
 
 }
+.secondary-font{
+    font-family: ‘Montserrat’, sans-serif;
+    } 
 .header{
     display: flex;
     justify-content: space-between;
@@ -27,7 +29,6 @@ body{
 }
 .shoppy-btn h2{
     color: white;
-    font-family: 'Montserrat', sans-serif;
 }
 .icons-btn{
     padding-top: 7px;
@@ -58,7 +59,6 @@ body{
     margin-top: 25px;
 }
 .text1 h1{
-    font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     letter-spacing: -3px;
 }

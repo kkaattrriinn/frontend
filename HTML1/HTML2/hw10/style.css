@@ -4,6 +4,8 @@
 body{
     min-width: 390px;
     overflow-x: hidden;
+    font-family: ‘Poppins’, sans-serif;
+
 }
 .header{
     display: flex;
@@ -49,6 +51,7 @@ body{
 .shoes-img{
     display: flex;
     margin-top: 27px;
+    overflow: scroll;
 }
 .text-container{
     text-align: center;

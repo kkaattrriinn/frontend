@@ -135,3 +135,112 @@ body{
     bottom: 14px;
     margin-left: 15px;
 }
+.assortment, .assortment2{
+    margin-top: 45px;
+    padding: 0 25px;
+    display: flex;
+    overflow: scroll;
+}
+.boots h1{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+.boots .img-shoes-w{
+    width: 252px;
+    height: 252px;
+    margin-top: 10px;
+}
+.boots .pr-name{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 16px;
+}
+.boots .pr-name1{ 
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+
+}
+.boots .price{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.boots .img-shoes-w2{
+    margin-top:40px;
+    width: 252px;
+    height: 252px;
+    margin-left: 16px;
+}
+.text-drop h1{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 40px;
+}
+.text-products{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    margin-top: 15px;
+}
+.text-container2{
+    margin-top: 85px;
+}
+.list-btn{
+    width: 235px;
+    height: 55px;
+    border: 2px solid #000;
+    background: none;
+    margin: 0 auto;
+    display: block;
+    margin-top: 17px;
+}
+.list-btn h2{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.footer{
+    width: 390px;
+    height: 435px;
+    background-color: black;
+    margin-top: 80px;
+}
+.footer1{
+    display: flex;
+
+}
+.help{
+    margin-left: 16px;
+}
+.footer h1{
+    color: #C4C4C4;
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 25px; /* 178.571% */
+}
+.footer h2{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 25px; /* 178.571% */
+}
+.account, .help{
+    width: 162px;
+    height: 74px;
+    margin-top: 47px;
+    margin-left: 20px;
+}

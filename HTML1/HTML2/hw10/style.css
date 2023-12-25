@@ -215,7 +215,7 @@ body{
     font-family: Poppins;
 }
 .footer{
-    width: 390px;
+    /* width: 390px; */
     height: 435px;
     background-color: black;
     margin-top: 80px;
@@ -254,4 +254,53 @@ a{
 .info{
     text-align: center;
     margin-top: 43px;
+}
+@media (min-width:1512px) {
+    .container{
+        display: flex;
+    }
+    .shoes-assortment{
+        display: flex;
+        justify-content: space-between;
+    }
+    .shoes-women img{
+        width: 724px;
+        height: 454px;
+    }
+    .shoes-men img{
+        width: 724px;
+        height: 454px;
+        overflow: auto;
+    }
+    .shoes-men{
+        margin-top: 40px;
+    }
+    .boots .img-shoes-w2{
+        margin-left: 35px;
+    }
+    .boots .pr-name{
+        margin-left: 35px;
+    }
+    .text-container2{
+        margin-top: 160px;
+    }
+    .footer-media{
+        display: flex;
+        padding-top: 63px;
+    
+    }
+    .footer-media .follow-us{
+       margin-left: 330px;
+    }
+    .footer1{
+        margin-right: 85px;
+    }
+    .account{
+        margin-right: 85px;
+    }
+    .footer2 {
+        margin-right: 0;
+    }
+   
+
 }

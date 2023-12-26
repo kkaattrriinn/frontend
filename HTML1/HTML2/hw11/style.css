@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+.main_container{
+    max-width: 74.375rem;
+    margin: 0 auto;
+    padding-top: 3.125rem;
+    padding-left: 0.625rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.menu__right{
+    display: flex;
+    align-items: center;
+}
+header h1{
+    color: #BC436A;
+    font-family: Open Sans;
+    font-size: 1,125rem;
+    font-weight: 700;
+}
+.menu_link li{
+    list-style-type: none;
+    font-family: Avenir;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 2.5rem;
+}
+a{
+    text-decoration: none;
+    color: #767;
+}
+button{
+    border-radius: 4px;
+    background-color: #386E41;
+    border: none;
+    padding: 8px;
+    
+}
+button h2{
+    color: #FFF;
+    font-family: Avenir;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container{
+    background-image: url('../hw11/picture/Rectangle\ 4.jpg');
+    width: 1440px;
+    height: 1024px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}

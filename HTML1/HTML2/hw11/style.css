@@ -1,15 +1,26 @@
 *{
     box-sizing: border-box;
 }
-.main_container{
-    max-width: 74.375rem;
-    margin: 0 auto;
-    padding-top: 3.125rem;
-    padding-left: 0.625rem;
+html, body{
+    height: 100%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../hw11/picture/Image.png');
+    background-repeat: no-repeat;
+    background-position: right top 9.375rem;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .header{
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 3.125rem;
+    width: 85%;
 }
 .menu__right{
     display: flex;
@@ -23,7 +34,7 @@ header h1{
 }
 .menu_link li{
     list-style-type: none;
-    font-family: Avenir;
+    font-family: Open Sans;
     font-size: 1rem;
     font-weight: 400;
     display: inline-block;
@@ -42,16 +53,123 @@ button{
 }
 button h2{
     color: #FFF;
-    font-family: Avenir;
+    font-family: Open Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+.main-container{
+    margin-top: 12.5rem;
+    width: 85%;
+    margin: 0 auto;
+    flex: 1 1 auto;
+    
+}
 .container{
-    background-image: url('../hw11/picture/Rectangle\ 4.jpg');
-    width: 1440px;
-    height: 1024px;
-    background-repeat: no-repeat;
-    border-radius: 100%;
+}
+.text{
+    /* width: 32.875rem;
+    margin: 0 auto;
+    padding-left: 2.5rem; */
+    padding-top: 12.5rem;
+}
+
+.text h1{
+    color: #333;
+    font-family: Open Sans;
+    font-size: 36px;
+    font-weight: 800;
+    max-width: 50%;
+}
+.text span{
+    color:#BC436A;
+}
+.text p{
+    color: #7A7A7A;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 45%;
+    padding-top: 1.4375rem;
+}
+.select_block{
+    margin-top: 14.375rem;
+}
+.select{
+    width: 75rem;
+    height: 6.25rem;
+    border-radius: 8px;
+    background-color: #386E41;
+    display: flex;
+    justify-content: space-between;
+    padding: 33px;
+
+}
+.text-icons{
+    display: flex;
+    padding-bottom: 50px;
+}
+.text-icons .text_i{
+    margin-right: 25px;
+}
+.icon i{
+    padding-top: 5px;
+    color: #776677
+}
+.text_i h2{
+    color: #767676;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.select select{
+    width: 15.8125rem;
+    height:2.0625rem;
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: Open Sans;
+  }
+.search_place{
+    padding: 8px 21px;
+    border-radius: 4px;
+    background-color: #BC436A;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.11);
+    width: 145px;
+    height: 41px;
+
+}
+.search_place h2{
+    font-family: Open Sans;
+}
+.footer{
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+.footer h2{
+    text-align: center;
+    color: #767676;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+}
+.icons2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.icons2 i{
+    color:#767676;
+}
+.icons2 i:first-child{
+    margin-bottom:-7px ;
 }

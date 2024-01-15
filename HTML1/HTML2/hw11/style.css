@@ -111,7 +111,6 @@ button h2{
     margin-top: 14.375rem;
 }
 .select{
-    width: 75rem;
     height: 6.25rem;
     border-radius: 8px;
     background-color: #386E41;
@@ -241,5 +240,16 @@ button h2{
         background-position: right top 9.375rem;
         background-size: 90vw;
 
+    }
+}
+@media (max-width:1060px){
+    .select .search_place h2{
+        font-size: 15px;
+    }
+    .select .search_place{
+        padding: 0 0;
+    }
+    .select select{
+        font-size: 15px;
     }
 }

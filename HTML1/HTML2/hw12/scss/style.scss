@@ -7,11 +7,9 @@ $color-text2:#FF9900;
     font-size: 24px;
     font-weight: 700;
     font-family: 'Philosopher';
-    text-align: end;
     position: relative;
-    left: 83%;
     margin-top: 35px;
-    margin-bottom: 120px;
+    float: right;
     &::after{
         content: "";
         position: absolute;
@@ -22,6 +20,16 @@ $color-text2:#FF9900;
         background-color: rgb(255, 230, 0); 
     }
 }
+@mixin title-style{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+}
+@mixin width-margin{
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 120px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap');
 *{
@@ -29,7 +37,7 @@ $color-text2:#FF9900;
 }
 body{
     font-family: 'Philosopher';
-    max-width: 100%;
+    width: 1920px;
 }
 .section_1{
     height: 100vh;
@@ -48,8 +56,7 @@ body{
     }
 
     header{
-        width: 85%;
-        margin: 0 auto;
+        @include width-margin;
         display: flex;
         justify-content: space-between;
         padding-top: 40px;
@@ -96,28 +103,39 @@ body{
     }
     .item1{
         height: 80%;
-        max-width: 85%;
-        margin: 0 auto;
+        @include width-margin;
         .container{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            h1{
-                color:$color-text;
-                font-size: 80px;
-                font-size: 400;
-                span{
-                    color:$color-text2;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            .title{
+                width: 50%;
+                text-align: right;
+                margin-right: 150px;
+                h1{
+                    color:$color-text;
+                    font-size: 80px;
+                    font-weight: 400;
+                    span{
+                        color:$color-text2;
+                    }
                 }
             }
-            p{
-                color:$color-text;
-                font-size: 34px;
-                font-weight: 400;
-                span{
-                    color: $color-text2;
-                    display: block;
-                    text-align: right; 
+            .text{
+                margin-right: 150px;
+                width: 50%;
+                p{
+                    color:$color-text;
+                    font-size: 34px;
+                    font-weight: 400;
+                    span{
+                        color: $color-text2;
+                        display: block;
+                        text-align: right; 
+                    }
                 }
             }
         }
@@ -125,11 +143,10 @@ body{
 }
 .section_2{
     background-color: rgb(254, 252, 234);
-    height: 100%;
+    height: 1300px;
+    
     h1{
-        color: black;
-        font-size: 40px;
-        font-weight: 700;
+        @include title-style;
         padding-top: 120px;
         padding-left: 140px;
         padding-bottom: 70px;
@@ -137,76 +154,78 @@ body{
             color:$color-text2;
         }
     }
-    h2{
-        font-size: 24px;
-        font-weight: 700;
-        color:$color-text2;
-        margin-bottom: 18px;
-    }
-    p{
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .grid-box{
-        width: 85%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 509px 487px 509px ;
-        gap: 30px 60px;
-        .img_2{
-            grid-column: 1/2;
-            width: ;
-            p{
-                margin-bottom: 28px;
-                padding-right: 203px;
-            }
+    .container{
+        width: 91%;
+        h2{
+            font-size: 24px;
+            font-weight: 700;
+            color:$color-text2;
+            margin-bottom: 18px;
         }
-        .img_3{
-            grid-column:2/3;
-            grid-row:1/3;
-            text-align: center;
-            h2{
-                padding-top: 15px;
-            }
-            p{
-                margin-bottom: 39px;
-                padding-left: 128px;
-                padding-right: 105px;
-            }
+        p{
+            font-size: 18px;
+            font-weight: 400;
         }
-        .img_4{
-            grid-column: 3/4;
-            grid-row: 1/2;
-        }
-        .img_5{
-            p{
-                margin-bottom: 34px;
-                padding-right: 200px;
+        .grid-box{
+            width: 85%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 509px 487px 509px ;
+            gap: 30px 60px;
+            .img_2{
+                grid-column: 1/2;
+                p{
+                    margin-bottom: 28px;
+                    padding-right: 203px;
+                }
             }
-        }
+            .img_3{
+                grid-column:2/3;
+                grid-row:1/3;
+                text-align: center;
+                h2{
+                    padding-top: 15px;
+                }
+                p{
+                    margin-bottom: 39px;
+                    padding-left: 128px;
+                    padding-right: 105px;
+                }
+            }
+            .img_4{
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+            .img_5{
+                p{
+                    margin-bottom: 34px;
+                    padding-right: 200px;
+                }
+            }
 
-    }
-    button{
-        @include button-style;
-        // background: none;
-        // border: none;
-        // font-size: 24px;
-        // font-weight: 700;
-        // font-family: 'Philosopher';
-        // text-align: end;
-        // position: relative;
-        // left: 83%;
-        // margin-top: 35px;
-        // margin-bottom: 120px;
-        // &::after{
-        //     content: "";
-        //     position: absolute;
-        //     left: 0;
-        //     bottom: -5px; 
-        //     width: 100%;
-        //     height: 5px; 
-        //     background-color: rgb(255, 230, 0); 
-        // }
+        }
+        button{
+            @include button-style;
+        //         // background: none;
+        //         // border: none;
+        //         // font-size: 24px;
+        //         // font-weight: 700;
+        //         // font-family: 'Philosopher';
+        //         // text-align: end;
+        //         // position: relative;
+        //         // left: 83%;
+        //         // margin-top: 35px;
+        //         // margin-bottom: 120px;
+        //         // &::after{
+        //         //     content: "";
+        //         //     position: absolute;
+        //         //     left: 0;
+        //         //     bottom: -5px; 
+        //         //     width: 100%;
+        //         //     height: 5px; 
+        //         //     background-color: rgb(255, 230, 0); 
+        //         // }
+        }
     }
 }
 .section_3{
@@ -223,22 +242,18 @@ body{
         top: 29%;
     }
     &::after{
-        bottom: 8%;
+        bottom: 6%;
         z-index: -1;
     }
     width: 100%;
     height: 905px;
     .wrapper2{
-        width: 85%;
-        margin: 0 auto;
-        padding-top: 120px;
+        @include width-margin;
         button{
             float: right;
         }
         h1{
-            font-size: 40px;
-            font-weight: 700;
-            color: black;
+            @include title-style;
             span{
                 color: $color-text2;
             }
@@ -287,5 +302,204 @@ body{
                 }
             }
         }
+        button{
+            @include button-style;
+        }
     }
 } 
+.section_4{
+    height: 930px;
+    background-image: url('../picture/—Pngtree—south\ korea\ jinxian\ ink\ hills_6690513\ 1.png');
+    background-size: cover;
+    .wrapper3{
+        @include width-margin;
+        padding-top: 115px;
+        h1{
+            @include title-style;
+            span{
+                color: $color-text2;
+            }
+        }
+        .wrapper-container{
+            margin-top: 75px;
+            padding-left: 100px;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            .text-container{
+                margin-top:30px;
+                .text-button{
+                    width: 566px;
+                    p{
+                        padding-top: 20px;
+                        font-size: 18px;
+                    }
+                    button{
+                        @include button-style;
+                    }
+                }
+            }
+        }
+    }
+}
+.section_5{
+    height: 1180px;
+    .wrapper4{
+        @include width-margin;
+        h1{
+            @include title-style;
+            span{
+                color: $color-text2;
+            }
+        }
+        .grid-box2{
+            display: grid;
+            grid-template-columns: 465px 411px 700px;
+            grid-template-rows: auto auto;
+            .img3{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .img4{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
+            .img5{
+                grid-column: 2/3;
+                grid-row: 1/3;
+            }
+            .img7{
+                grid-column: 3/4;
+                grid-row: 2/3;
+                display: flex;
+                .special-img{
+                    img{
+                        display: block;
+                    }
+                }
+            }
+        }
+        button{
+            @include button-style;
+        }
+    }
+}
+.section_6{
+    height: 1040px;
+    background-color: #F6FDEE;
+    .wrapper5{
+        @include width-margin;
+        h1{
+            @include title-style;
+            span{
+                color: $color-text2;
+            }
+        }
+        .grid-box3{
+            display: grid;
+            grid-template-columns: 285px 646px 512px;
+            column-gap: 100px;
+            margin-top: 92px;
+            .img3{
+                grid-column:2/3;
+                grid-row:1/3;
+                img{
+                 padding-top: 65px;
+                }
+            }
+            .img4{
+                grid-column: 3/4;
+                grid-row: 1/2;
+            }
+
+        }
+    }
+}
+.footer{
+    height: 100vh;
+    background-image: url('../picture/—Pngtree—south\ korea\ jinxian\ ink\ hills_6690513\ 2.png');
+    .wrapper_last{
+        @include width-margin;
+        height: 100vh;
+        position: relative;
+        h1{
+            @include title-style;
+            span{
+                color: $color-text2;
+            }
+        }
+        .information-box{
+            display: flex;
+            margin-top: 120px;
+            .title{
+                h1{
+                    @include title-style;
+                    span{
+                        color: $color-text2;
+                    }
+                }
+            }
+            .grid-box4{
+                margin-left: 68px;
+                display: grid;
+                grid-template-columns: 365px 365px 420px;
+                gap: 65px;
+                h2{
+                    font-size: 30px;
+                    font-weight: 700;
+                    padding-bottom: 60px;
+                }
+                p{
+                    white-space: pre-line;
+                    font-size: 30px;
+                    font-weight: 400;
+                    line-height: 1.5;
+                }
+                .box5{
+                    grid-column: 2/4;
+                    form{
+                        .form-decoration{
+                            border-bottom: 1px solid black;
+                        }
+                        label{
+                            font-size: 30px;
+                            line-height: 2;
+                        }
+                        input{
+                            border: none;
+                        }
+                        button{
+                            font-size: 40px;
+                            font-weight: 700;
+                            font-family: 'Philosopher';
+                            background-color: #FF9900;
+                            border: none;
+                            border-radius: 5px;
+                            padding: 15px 55px;
+                            float: right;
+                            margin-top: 38px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer2{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid black;
+            h3{
+                font-size: 18px;
+                font-weight: 700;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+            .info2{
+                h3{
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

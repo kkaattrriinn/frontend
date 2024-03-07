@@ -353,14 +353,15 @@ body{
         background-color: rgb(255, 153, 0);
     }
     &::before{
-        top: 29%;
+        top: 22%;
     }
     &::after{
-        bottom: 6%;
+        bottom: 5%;
         z-index: -1;
     }
     height: 1180px;
     .wrapper4{
+        position: relative;
         @include width-margin;
         h1{
             @include title-style;
@@ -443,11 +444,14 @@ body{
             grid-template-columns: 285px 646px 512px;
             column-gap: 100px;
             margin-top: 5.75rem;
+            .img2{
+                align-self: center;
+            }
             .img3{
                 grid-column:2/3;
                 grid-row:1/3;
                 img{
-                 padding-top: 4.0625rem;
+                 padding-top: 1.0625rem;
                 }
             }
             .img4{

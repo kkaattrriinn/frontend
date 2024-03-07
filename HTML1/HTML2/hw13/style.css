@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+main{
+    width: 100%;
+}
+.wrapper{
+    width: 85%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: black;
+}
+.grid__wrapper{
+    padding: 110px 340px;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    row-gap: 80px;
+}
+.button_style{
+    width: 120px;
+    height: 55px;
+    background: none;
+    border: 2px solid #0F89FA;
+    color: #0F89FA;
+    font-weight: 600;
+}
+.btn_1{
+    background-color: black;
+    /* color: #0F89FA; */
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+.btn_1:hover{
+    background-color: #0F89FA;
+    color: white;
+}
+.btn_2{
+    transition: 0.5s;
+    transform: scale(1, 1);
+}
+.btn_2:hover{
+    box-shadow: 1px 1px 10px 5px #0F89FA;
+    transform: scale(1.01, 1.01);
+}
+.btn_3{
+    position: relative;
+}
+.btn_3::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #0F89FA;
+    transition: height 0.5s ease;
+}
+.btn_3:hover::after{
+    height: 100%;
+}
+.btn_4{
+    position: relative;
+}
+.btn_4::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0F89FA;
+    transition: width 0.5s ease;
+}
+.btn_4:hover::after{
+    width: 100%;
+}
+.btn_6{
+    position: relative;
+}
+.btn_6::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0F89FA;
+    transition: width 0.7s ease;
+}
+.btn_6::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0F89FA;
+    transition: width 0.7s ease;
+}
+.btn_6:hover::after{
+    width: 100%;
+}
+.btn_6:hover::before{
+    width: 100%;
+}
+.btn_7{
+    background-color: #0F89FA;
+    color: white;
+}
+.btn_7::after{
+    content: 'Notify Me';
+}
+.btn_7:hover::after{
+    content: 'Thanks';
+}
+.btn_9{
+    width: 100px;
+    transform-origin: 0 0;
+    transform: scale(1, 1);
+    transition: 1s;
+    font-size: 12px;
+}
+.btn_9:hover{
+    transform: scale(1.2, 1.1);
+    font-size: 16px;;
+}

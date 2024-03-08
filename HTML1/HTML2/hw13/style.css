@@ -77,6 +77,29 @@ main{
 .btn_4:hover::after{
     width: 100%;
 }
+.btn_5{
+    position: relative; 
+    background:none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+.btn_5:hover::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 5px;
+    width: 90%;
+    transition: opacity 0.3s ease;  
+    box-shadow: 0 0 10px 5px #0F89FA;
+  }
+  
+.btn_5:hover {
+    transform: translateY(-5px);
+  }
+  
+.btn_5:focus {
+    outline: none;
+  }
 .btn_6{
     position: relative;
 }
